@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# 📖 GitHub Blog
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📚 Project description
 
-Currently, two official plugins are available:
+**GitHub Blog** is a frontend application that uses the GitHub API to display the user profile and list all issues from a specific repository. Users can view the full content of each issue, working like a blog where each post is a GitHub issue.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Technologies used
 
-## Expanding the ESLint configuration
+The project was developed with the following technologies and libraries:
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- **React**
+- **Styled-components**
+- **Axios**
+- **React Router Dom**
+- **React Markdown**
+- **React Hook Form**
+- **Fortawesome(Font Awesome)**
+- **Zod**
+- **Date-fns**
 
-- Configure the top-level `parserOptions` property like this:
+## ⚙️ Installation
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+To install the project and its dependencies, use:
+
+```bash
+npm install
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## 🔧 Setting environment variables
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+This project use environment variables to configure the GitHub API. Configure the variables following the .env.example file available in the repository. 
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+## 🚀 Executing the project
+
+To start the project in a development environment, use:
+
+```bash
+npm run dev
 ```
+
+## 🌟 Main features
+
+- GitHub Profile: Display profile information for a GitHub user.
+
+- Issues Listing: Display all issues from a specific repository as blog posts.
+
+- Issue view: Allows the user to see the complete content of each issue, simulating a detailed post.
+
+## 🔗 API integration
+
+This project integrates with the GitHub API to fetch profile and issue data from a repository.
+
